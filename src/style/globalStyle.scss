@@ -1,0 +1,17 @@
+@import "reset";
+@import "~susy/sass/susy";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import "variabiles";
+@import "base";
+
+
+.wrap {
+    @include container(80%);
+}
+
+:local(.box) {
+  background: $base03;
+  border: 1px solid $base00;
+  margin: auto;
+  width: 300px;
+}

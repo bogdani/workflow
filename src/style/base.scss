@@ -1,0 +1,9 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+body {
+    font-family: $font-primary;
+    font-size: 1.2rem;
+    line-height: 160%;
+    background: $green;
+    color: $base3;
+}
