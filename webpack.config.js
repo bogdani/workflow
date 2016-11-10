@@ -32,7 +32,7 @@ const cssIdentifier = PRODUCTION ? '[hash:base64:10]' : '[path][name]---[local]'
 
 const cssLoader = PRODUCTION
 	?	ExtractTextPlugin.extract({
-			loader: 'css-loader?minimize&localIdentName=' + cssIdentifier
+			loader: 'css-loader?minimize&localIdentName=' + cssIdentifier + '!sass-loader?sourceMap'
 
 		})
 	: 	['style-loader', 'css-loader?localIdentName=' + cssIdentifier, 'sass-loader?sourceMap'];
@@ -55,7 +55,7 @@ module.exports = {
     },
             {
                 test: /\.scss$/,
-                loaders: 'cssLoader',
+                loaders: cssLoader,
                 exclude: /node_modules/
     }]
     },

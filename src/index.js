@@ -1,4 +1,4 @@
-var style = require('!style!css!sass!./style/globalStyle.scss');
+var style = require('./style/globalStyle.scss');
 //var style = require('./style/globalStyle.scss');
 //var messages = require('./components/messages');
 
