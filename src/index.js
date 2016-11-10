@@ -1,10 +1,9 @@
-var style = require('./style/globalStyle.scss');
+var style = require('!style!css!sass!./style/globalStyle.scss');
+//var style = require('./style/globalStyle.scss');
 //var messages = require('./components/messages');
-//import Vue from 'vue';
+
 var header = require('./components/header.js');
 
-
-//import App from './App';
 //import Button from './button';
 //import floare from './components/Image';
 //console.log(Button);

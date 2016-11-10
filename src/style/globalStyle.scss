@@ -5,9 +5,32 @@
 @import "base";
 
 
-.wrap {
-    @include container(80%);
-}
+$susy: (
+    flow: ltr, //reading direction of your document
+    output: float, //float | isolate
+    math: fluid, //fluid | static
+    column-width: 40px,
+    container: auto, //<length> | auto
+    container-position: center, //left | center | right | <length> [*2]
+    last-flow: to,
+    columns: 12,//<number> | <list> => (1 1 2 3 5 8 13)
+    gutters: 1/4,//gutters one quarter the size of a column
+    gutter-position: after,//	before | after | split | inside | inside-static
+    global-box-sizing: content-box,//Browsers use the content-box model unless you specify otherwise ++ border-box 
+    debug: (image: hide,
+    color: rgba(#6666ff, 0.25),
+    output: background,
+    toggle: top right),
+    use-custom: (
+        background-image: true,
+        background-options: false,
+        box-sizing: true,
+        clearfix: false,
+        rem: true
+    )
+)
+
+/*
 
 :local(.box) {
   background: $base03;
@@ -15,3 +38,4 @@
   margin: auto;
   width: 300px;
 }
+*/

@@ -1,3 +1,8 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+$font-primary: Merriweather, serif;
+$font-secondary: Bree Serif, serif; 
+
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -15,5 +20,7 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
 
-$font-primary: Merriweather, serif;
-$font-secondary: Bree Serif, serif; 
+$small:    400px;
+$medium:    700px;
+$large:    960px;
+$desktop:    1200px;

@@ -1,4 +1,4 @@
 module.exports = {
-  hi: 'Oh hi there my love',
+  hi: 'Hello',
   event: 'Simy '
 };
